@@ -1,0 +1,31 @@
+{
+  "name": "team-challenge",
+  "author": "Dillion Byron, Melody Lee, Andrew Vuong, Michael Lew",
+  "homepage": "https://github.com/greycabb/team-challenge/build",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.7.0",
+    "enzyme": "^2.6.0",
+    "react-addons-test-utils": "^15.4.0",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "js-md5": "^0.4.1",
+    "lodash": "^4.16.6",
+    "moment": "^2.15.2",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.6",
+    "react-dom": "^15.3.2",
+    "react-loader": "^2.4.0",
+    "react-router": "^3.0.0",
+    "react-time": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
