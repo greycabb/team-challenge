@@ -1,5 +1,4 @@
 import React from 'react';
-import SignUpForm from './TeamSignUp';
 import {EmailInput} from './EmailInput';
 import {shallow} from 'enzyme';
 import sinon from 'sinon';
