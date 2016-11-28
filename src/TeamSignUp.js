@@ -19,7 +19,7 @@ class SignUpForm extends React.Component {
       password: { value: '', valid: false },
       passwordConf: { value: '', valid: false }
     };
-
+    
     // Set state to initial state
     this.state = this.initialState;
 
@@ -37,8 +37,8 @@ class SignUpForm extends React.Component {
     this.updateState(this.initialState);
   }
 
-  // Removed since only the App needs to handle anything after the signup is successful.
-  // and we can just invoke this function from the parent App instead
+  // (Removed since only the App needs to handle anything after the signup is successful.
+  // and we can just invoke this function from the parent App instead)
   // handleSubmit(event) {
   //   event.preventDefault();
   //   // console.log('Submitted!');
