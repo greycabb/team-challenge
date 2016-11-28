@@ -6,12 +6,11 @@ import React from 'react';
 class EmailInput extends React.Component {
   constructor(props){
     super(props);
-    this.isValid = true;
     this.validate = this.validate.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
   validate(currentValue){
     if(currentValue === ''){ //check presence
-      this.isValid = true;
       return {missing: true, isValid: false}
     }
 
@@ -19,10 +18,8 @@ class EmailInput extends React.Component {
     //pattern comparison from w3c https://www.w3.org/TR/html-markup/input.email.html#input.email.attrs.value.single
     var valid = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(currentValue);
     if(!valid){
-      this.isValid = false;
       return {invalidEmail:true, isValid:false};
     }    
-    this.isValid = true;
     return {isValid: true}; //no errors
   }  
 
@@ -55,7 +52,7 @@ class EmailInput extends React.Component {
         {errors.missing &&
           <p className="help-block error-missing">we need to know your email address</p>
         }
-        {!this.isValid &&
+        {errors.invalidEmail &&
           <p className="help-block error-invalid">this is not a valid email address</p>
         }
       </div>
