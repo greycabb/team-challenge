@@ -7,9 +7,6 @@ class PasswordConfirmationInput extends React.Component {
 
   
   validate(currentValue){
-    console.log(currentValue);
-    console.log (this.props.password);
-    
     if((currentValue === '' || this.props.password !== currentValue)){ //check both entries
       return {mismatched:true, isValid:false};
     } 
