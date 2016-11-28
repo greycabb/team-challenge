@@ -8,6 +8,7 @@ class EmailInput extends React.Component {
     super(props);
     this.validate = this.validate.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.updateParent = this.props.updateParent;
   }
   validate(currentValue){
     if(currentValue === ''){ //check presence
@@ -34,7 +35,7 @@ class EmailInput extends React.Component {
       }
     };
 
-    this.props.updateParent(stateUpdate) //update parent state
+    this.updateParent(stateUpdate) //update parent state
   }
 
   render() {
