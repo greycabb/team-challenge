@@ -21,5 +21,4 @@ describe('<PasswordConfirmationInput /> component', () => {
         const wrapper = shallow(<PasswordConfirmationInput value={"goDawgs!"} password={"goDawgs!"} updateParent={fakeUpdate} />);
         expect(wrapper.children().length).toEqual(2);
     });
-    
 })
