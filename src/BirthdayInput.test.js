@@ -8,7 +8,7 @@ function fakeUpdate(event){
     return null;
 }
 
-
+// Start tests
 describe('<BirthdayInput /> component', () => {
     it('should show missing input error message for blank field', () => {
         const wrapper = shallow(<BirthdayInput value={''} updateParent={fakeUpdate} />);
