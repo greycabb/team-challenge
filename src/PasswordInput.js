@@ -1,5 +1,4 @@
 import React from 'react';
-import RequiredInput from './RequiredInput';
 
 /**
  * A component representing a controlled input for a password confirmation
