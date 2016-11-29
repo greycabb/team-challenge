@@ -1,7 +1,7 @@
 {
   "name": "team-challenge",
   "author": "Dillion Byron, Melody Lee, Andrew Vuong, Michael Lew",
-  "homepage": "https://github.com/greycabb/team-challenge/build",
+  "homepage": "https://greycabb.github.io/team-challenge/build",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

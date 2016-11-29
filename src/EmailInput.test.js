@@ -3,9 +3,6 @@ import {EmailInput} from './EmailInput';
 import {shallow} from 'enzyme';
 import sinon from 'sinon';
 
-function fakeUpdate(event){
-    return null;
-}
 
 // Testing starts here
 describe('<EmailInput /> component', () => {
@@ -23,5 +20,8 @@ describe('<EmailInput /> component', () => {
     })
 })
 
-
-
+// This function is needed just as a placeholder because the Email Component calls on this.props.updateParent,
+// Which calls on a function in a parent component that cant be accessed in shallow rendering.
+function fakeUpdate(event){
+    return null;
+}
