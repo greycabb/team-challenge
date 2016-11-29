@@ -3,6 +3,9 @@ import {PasswordConfirmationInput} from './PasswordInput';
 import {shallow} from 'enzyme';
 import sinon from 'sinon';
 
+
+// This function is needed just as a placeholder because the Email Component calls on this.props.updateParent,
+// Which calls on a function in a parent component that cant be accessed in shallow rendering.
 function fakeUpdate(event){
     return null;
 }
